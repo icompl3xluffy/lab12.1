@@ -8,3 +8,14 @@ const app =express();
 const port= 3000
 
 
+app.use(express.static('./public'));
+// set up  GET request 
+app.get("/", (req, res)=>{
+    res.send("Requested  to index")
+});
+
+app.get("/contact", (req, res)=>{
+    res.send("Requested  to index")
+})
+
+
